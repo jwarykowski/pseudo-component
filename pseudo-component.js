@@ -97,10 +97,10 @@ class Pagination extends React.Component {
                     <p>{ paginationText }</p>
                 </div>
                 <div>
-                    <button disabled={!isFirstPage} onClick={ this.handleFirstButtonClick } />
-                    <button disabled={!isFirstPage} onClick={ this.handlePrevButtonClick } />
-                    <button disabled={!isLastPage} onClick={ this.handleNextButtonClick } />
-                    <button disabled={!isLastPage} onClick={ this.handleLastButtonClick } />
+                    <button disabled={isFirstPage} onClick={ this.handleFirstButtonClick } />
+                    <button disabled={isFirstPage} onClick={ this.handlePrevButtonClick } />
+                    <button disabled={isLastPage} onClick={ this.handleNextButtonClick } />
+                    <button disabled={isLastPage} onClick={ this.handleLastButtonClick } />
                 </div>
             </div>
         );
