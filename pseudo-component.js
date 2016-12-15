@@ -212,7 +212,7 @@ class FilterableEventTable extends React.Component {
                 <DateInput
                     startDate={ this.state.filters.startDate }
                     endDate={ this.state.filters.endDate }
-                    onNewDateRange={ this.handleFilterUpdate }
+                    onFilterUpdate={ this.handleFilterUpdate }
                 />
 
                 <div>
